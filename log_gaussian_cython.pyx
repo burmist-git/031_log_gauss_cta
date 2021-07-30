@@ -4,7 +4,6 @@ from libc.math cimport log
 from libc.math cimport sqrt
 
 def log_gaussian(numpy.ndarray[numpy.double_t, ndim=3] x, numpy.ndarray[numpy.double_t, ndim=3] mean, numpy.ndarray[numpy.double_t, ndim=3] sigma):
-  #def log_gaussian(numpy.ndarray[numpy.double_t, ndim=3] x, numpy.ndarray[numpy.double_t, ndim=3] mean, numpy.ndarray[numpy.double_t, ndim=3] sigma):
   cdef unsigned int xDim = mean.shape[0]
   cdef unsigned int yDim = mean.shape[1]
   cdef unsigned int zDim = mean.shape[2]
