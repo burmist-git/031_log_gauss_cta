@@ -1,0 +1,9 @@
+*~
+build/
+log_gaussian_cython.c
+log_gaussian_cython.cpython-37m-x86_64-linux-gnu.so
+log_gaussian_heap
+log_gaussian_numba_CC.cpython-37m-x86_64-linux-gnu.so
+log_gaussian_stack
+log_gaussian_stack_float
+tmp/
