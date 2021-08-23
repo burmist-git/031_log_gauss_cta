@@ -13,4 +13,3 @@ def log_gaussian(numpy.ndarray[numpy.double_t, ndim=3] x, numpy.ndarray[numpy.do
       for k in range(zDim):
         log_pdf[i,j,k] = -(x[i][j][0] - mean[i][j][k])*(x[i][j][0] - mean[i][j][k])/2.0/sigma[i][j][k]/sigma[i][j][k] - log(sqrt(2*3.141592653589793)*sigma[i][j][k])
   return log_pdf
-
