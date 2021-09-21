@@ -1,6 +1,7 @@
 #include <time.h>
 #include "TRandom3.h"
 #include <math.h>
+//#include <cmath.h>
 
 const unsigned int xDim = 196;
 const unsigned int yDim = 609;
@@ -57,6 +58,7 @@ void log_gaussian(const auto (&x), const auto (&mean), const auto (&sigma), auto
     for(j = 0;j<yDim;j++)
       for(k = 0;k<zDim;k++)
 	log_pdf[i][j][k] = -(x[i][j][0] - mean[i][j][k])*(x[i][j][0] - mean[i][j][k])/2.0/sigma[i][j][k]/sigma[i][j][k] - log(sqrt(2*3.141592653589793)*sigma[i][j][k]);
+  //log_pdf[i][j][k] = -(x[i][j][0] - mean[i][j][k])*(x[i][j][0] - mean[i][j][k])/2.0/sigma[i][j][k]/sigma[i][j][k] - logf(sqrt(2*3.141592653589793)*sigma[i][j][k]);
 }
 
 double sum(const auto (&log_pdf)){

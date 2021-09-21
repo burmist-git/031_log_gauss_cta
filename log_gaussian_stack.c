@@ -43,7 +43,7 @@ int main(){
     log_gaussian(x, mean, sigma, log_pdf);
     clock_t toc = clock();
     tottime = tottime + (double)(toc - tic);
-    printf("sum %f \n", makesum(log_pdf));
+    //printf("sum %f \n", makesum(log_pdf));
   }
   printf("Elapsed: %f seconds\n", tottime / CLOCKS_PER_SEC / n);
   return 0;

@@ -7,3 +7,9 @@ log_gaussian_numba_CC.cpython-37m-x86_64-linux-gnu.so
 log_gaussian_stack
 log_gaussian_stack_float
 tmp/
+liblog_approx.so
+log_approx_numba_CC.cpython-37m-x86_64-linux-gnu.so
+log_gaussian_heap_log_approx
+log_gaussian_vector
+log_table.o
+
